@@ -2,7 +2,7 @@
 
 ## About
 
-This little talk is to measure the importance of creating tests on our projects and eventually helping us from making mistakes in the future
+This little talk is to measure the importance of creating tests on our projects and eventually helping us to avoid from making mistakes in the future
 
 ## Tools
 
