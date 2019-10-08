@@ -10,7 +10,7 @@ Jest, Vue Client, etc.
 
 ## Installing Jest through Vue CLI
 
-Execute the following command. Sit and wait 'til everything is done ;)
+Execute the following command. Sit and wait 'til everything is done, or just go get a coffee :coffee:
 
 ```cmd
 vue add @vue/unit-jest
@@ -22,3 +22,6 @@ It'll create some files structuring the whole project to start working with test
 
 > Creating our first test file
 
+## Links
+
+- [@vue/test-utils](https://vue-test-utils.vuejs.org)
