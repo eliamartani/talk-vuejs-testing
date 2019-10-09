@@ -20,6 +20,16 @@ vue add @vue/unit-jest
 
 It'll create some files structuring the whole project to start working with tests
 
+### Disclaimer
+
+Old projects may face issues since it doesn't use Vue CLI
+
+My suggestion: Install it manually or just add `vue-cli-service` to your project
+
+```cmd
+yarn add @vue/cli-service --dev
+```
+
 ## Testing
 
 > Creating our first test file
