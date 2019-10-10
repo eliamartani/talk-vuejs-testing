@@ -10,21 +10,21 @@ This little talk is to measure the importance of creating tests on our projects 
 
 Jest, Vue Client, etc.
 
-## Installing Jest through Vue CLI
+## Installing Jest
 
-Execute the following command. Sit and wait 'til everything is done, or just go get a coffee :coffee:
+### Fastest way - With Vue CLI
+
+Execute the following command - Sit and wait 'till everything is done, or just go grab a coffee :coffee:
 
 ```cmd
 vue add @vue/unit-jest
 ```
 
-It'll create some files structuring the whole project to start working with tests
+It will create some files structuring the whole project to just start working with tests.
 
-### Disclaimer
+> "Hey buddy, I'm kinda lazy and I think my project doesn't have Vue CLI. Can I add it so I don't have to think too much?"
 
-Old projects may face issues since it doesn't use Vue CLI
-
-My suggestion: Install it manually or just add `vue-cli-service` to your project
+Hum.... yes? Execute the following command. It should work.
 
 ```cmd
 yarn add @vue/cli-service --dev
@@ -32,21 +32,21 @@ yarn add @vue/cli-service --dev
 
 ### Installing manually :muscle:
 
-You'll need to install the `jest` packages to your project:
+You'll need to install the `jest` package in your project:
 
 ```cmd
 yarn add jest jest-transform-stub jest-vue-preprocessor babel-jest vue-jest @vue/test-utils --dev
 ```
 
-Are you facing `Unexpected token {`? I did...
+Are you facing `Unexpected token {`? *I faced...*
 
 ```cmd
-yarn add babel-core babel-jest --dev
+yarn add babel-core babel-preset-env --dev
 ```
 
 Now begins the configuration...
 
-`.babelrc`:
+- `.babelrc`:
 
 ```cmd
 {
@@ -56,7 +56,7 @@ Now begins the configuration...
 }
 ```
 
-`jest.config.js`:
+- `jest.config.js`:
 
 ```cmd
 module.exports = {
@@ -83,15 +83,19 @@ module.exports = {
 }
 ```
 
-`package.json`:
+- `package.json`:
 
 ```cmd
 {
     "scripts": {
-        "test": "jest"
+        "test:unit": "jest"
     }
 }
 ```
+
+## Executing
+
+> `yarn test:unit`
 
 ## Testing
 
