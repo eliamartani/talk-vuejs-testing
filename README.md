@@ -1,16 +1,17 @@
 # Testing VueJS projects
 
-:construction: Under construction :construction:
-
 ## About
 
 This little talk is to measure the importance of creating tests on our projects and eventually helping us to avoid from making mistakes in the future
+
+## Resons for testing
+
+
 
 ## Tools we're going to use
 
 - Jest
 - Vue Client
-- Cypress
 
 ## Types of Test
 
@@ -21,6 +22,8 @@ This little talk is to measure the importance of creating tests on our projects 
 - `E2E testing`
 
 > *Unlike a unit test, you're testing the entire application.*
+
+**We're not going to talk about `E2E`. Sorry!**
 
 ## Unit Testing
 
@@ -62,7 +65,7 @@ Now begins the configuration...
 
 - `.babelrc`:
 
-```cmd
+```javascript
 {
     "presets": [
         "babel-preset-env"
@@ -72,7 +75,7 @@ Now begins the configuration...
 
 - `jest.config.js`:
 
-```cmd
+```javascript
 module.exports = {
     moduleFileExtensions: [
         'js',
@@ -99,7 +102,7 @@ module.exports = {
 
 - `package.json`:
 
-```cmd
+```json
 {
     "scripts": {
         "test:unit": "jest"
@@ -111,7 +114,9 @@ module.exports = {
 
 Execute:
 
-> `yarn test:unit`
+```cmd
+yarn test:unit
+```
 
 ### Brief explanation
 
@@ -129,13 +134,13 @@ For asynchronous functions we can use `flush-promises`. It flushes all pending r
 
 Installing:
 
-```
+```cmd
 yarn add flush-promises --dev
 ```
 
 Then adding in your test files:
 
-```
+```javascript
 import flushPromises from 'flush-promises'
 
 ...
@@ -151,8 +156,15 @@ it('async call', async () => {
 
 ## E2E Testing
 
+:construction: :construction: Under construction :construction: :construction:
+
+Just so you know, this is what an E2E test looks like:
+
+![E2E Test](https://res.cloudinary.com/practicaldev/image/fetch/s--iwFe4sSa--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/wt60c5tp9edask515t1x.png "E2E Test")
+
 ## Links
 
 - [@vue/test-utils](https://vue-test-utils.vuejs.org)
+- [Jest cheat sheet](https://github.com/sapegin/jest-cheat-sheet)
 - [Unit testing cheat sheet](https://github.com/dekadentno/vue-unit-testing-cheat-sheet)
 - [Unit vs E2E Testing for Vue.js](https://vuejsdevelopers.com/2019/04/01/vue-testing-unit-vs-e2e/)
