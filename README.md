@@ -99,15 +99,37 @@ Execute:
 
 > `yarn test:unit`
 
-## Testing
-
-> Creating our first test file
-
 ## Brief explanation
 
 - `describe`: Responsible for grouping every test
 - `it` or `test`: Where test goes
 - `describe`: Where comparison is made
+
+## Testing
+
+> Creating our first test file
+
+## Testing asynchronous functions
+
+For asynchronous functions we can use `flush-promises`. It flushes all pending resolved promise handlers
+
+```
+yarn add flush-promises --dev
+```
+
+```
+import flushPromises from 'flush-promises'
+
+...
+
+it('async call', async () => {
+    wrapper.find('button.add').trigger('click')
+
+    await flushPromises()
+    
+    expect(something).toBe(true)
+})
+```
 
 ## Links
 
