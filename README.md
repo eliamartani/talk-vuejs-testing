@@ -2,7 +2,7 @@
 
 ## About
 
-In this talk we're going to learn how to setup testing tools at our projects, creating tests and eventually seeing how important is for the whole project being filled with tests.
+In this talk we're going to learn how to setup testing tools at our projects, create tests and eventually realizing the importancy of testing in our projects.
 
 ## Resons for testing
 
