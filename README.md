@@ -2,7 +2,7 @@
 
 ## About
 
-This little talk is to measure the importance of creating tests on our projects and eventually helping us to avoid from making mistakes in the future
+In this talk we're going to learn how to setup testing tools at our projects, creating tests and eventually seeing how important is for the whole project being filled with tests.
 
 ## Resons for testing
 
@@ -22,6 +22,7 @@ This little talk is to measure the importance of creating tests on our projects 
 
 - Jest
 - Vue Client
+- Terminal
 
 ## Types of Test
 
@@ -39,7 +40,7 @@ This little talk is to measure the importance of creating tests on our projects 
 
 ### Installing Jest
 
-#### Fastest way - With Vue CLI
+#### Fastest way (With Vue CLI)
 
 Execute the following command - Sit and wait 'till everything is done, or just go grab a coffee :coffee:
 
