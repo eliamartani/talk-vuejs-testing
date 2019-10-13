@@ -135,12 +135,12 @@ If at some point you're using TDD. Maybe you'll need to add `--watch` and add a 
 
 ### Brief explanation
 
-If we still don't know how to work with it, let's clarify somethings:
+If at this point you still don't know some *keywords* for Javascript testing:
 
 - *describe*: Responsible for grouping every test
 - *it*: Where test goes
   - *test*: is an alias. it'll do the same thing
-- *describe*: Where comparison is made
+- *expect*: Where comparison is made
 
 ### Testing
 
@@ -181,6 +181,10 @@ Just so you know, this is what an E2E test looks like:
 ![E2E Test](https://res.cloudinary.com/practicaldev/image/fetch/s--iwFe4sSa--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/wt60c5tp9edask515t1x.png "E2E Test")
 
 *Image from [dev.to](https://dev.to/napoleon039/how-to-test-vue-apps-with-the-popular-cypress-framework-4jfg)*
+
+## QA
+
+Ask me anything - I'm not that smart but Google is, let's ask him together.
 
 ## Links
 
