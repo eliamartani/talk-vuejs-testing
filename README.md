@@ -93,13 +93,21 @@ module.exports = {
 }
 ```
 
-## Executing
+## How to test it?
+
+Execute:
 
 > `yarn test:unit`
 
 ## Testing
 
 > Creating our first test file
+
+## Brief explanation
+
+- `describe`: Responsible for grouping every test
+- `it` or `test`: Where test goes
+- `describe`: Where comparison is made
 
 ## Links
 
