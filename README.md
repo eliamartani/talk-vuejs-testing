@@ -131,7 +131,7 @@ The command below will call jest and test everything:
 yarn test:unit
 ```
 
-If at some point you're using TDD. Maybe you'll want to add `--watch` and add a new script. Just do it!
+If at some point you're using TDD. Maybe you'll need to add `--watch` and add a new script for that. Just do it!
 
 ### Brief explanation
 
