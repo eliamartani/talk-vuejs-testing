@@ -6,13 +6,27 @@
 
 This little talk is to measure the importance of creating tests on our projects and eventually helping us to avoid from making mistakes in the future
 
-## Tools
+## Tools we're going to use
 
-Jest, Vue Client, etc.
+- Jest
+- Vue Client
+- Cypress
 
-## Installing Jest
+## Types of Test
 
-### Fastest way - With Vue CLI
+- `Unit testing`
+
+> *The idea of a "unit" in testing, is to break down the code into small, easily testable parts.*
+
+- `E2E testing`
+
+> *Unlike a unit test, you're testing the entire application.*
+
+## Unit Testing
+
+### Installing Jest
+
+#### Fastest way - With Vue CLI
 
 Execute the following command - Sit and wait 'till everything is done, or just go grab a coffee :coffee:
 
@@ -30,7 +44,7 @@ Hum.... yes? Execute the following command. It should work.
 yarn add @vue/cli-service --dev
 ```
 
-### Installing manually :muscle:
+#### Installing manually :muscle:
 
 You'll need to install the `jest` package in your project:
 
@@ -93,29 +107,33 @@ module.exports = {
 }
 ```
 
-## How to test it?
+### How to test it?
 
 Execute:
 
 > `yarn test:unit`
 
-## Brief explanation
+### Brief explanation
 
 - `describe`: Responsible for grouping every test
 - `it` or `test`: Where test goes
 - `describe`: Where comparison is made
 
-## Testing
+### Testing
 
 > Creating our first test file
 
-## Testing asynchronous functions
+### Testing asynchronous functions
 
 For asynchronous functions we can use `flush-promises`. It flushes all pending resolved promise handlers
+
+Installing:
 
 ```
 yarn add flush-promises --dev
 ```
+
+Then adding in your test files:
 
 ```
 import flushPromises from 'flush-promises'
@@ -131,7 +149,10 @@ it('async call', async () => {
 })
 ```
 
+## E2E Testing
+
 ## Links
 
 - [@vue/test-utils](https://vue-test-utils.vuejs.org)
 - [Unit testing cheat sheet](https://github.com/dekadentno/vue-unit-testing-cheat-sheet)
+- [Unit vs E2E Testing for Vue.js](https://vuejsdevelopers.com/2019/04/01/vue-testing-unit-vs-e2e/)
