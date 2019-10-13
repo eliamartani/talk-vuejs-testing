@@ -6,7 +6,17 @@ This little talk is to measure the importance of creating tests on our projects 
 
 ## Resons for testing
 
+- Quality Code
 
+*You're sure that the code does what we expect.*
+
+- Design focus on the needs
+
+*You understand the requirements, you design based on that and you build thinking on that.*
+
+- Less debugging more coding
+
+*With more test, few errors you'll have.*
 
 ## Tools we're going to use
 
@@ -15,13 +25,13 @@ This little talk is to measure the importance of creating tests on our projects 
 
 ## Types of Test
 
-- `Unit testing`
+- Unit testing
 
-> *The idea of a "unit" in testing, is to break down the code into small, easily testable parts.*
+*The idea of a "unit" in testing, is to break down the code into small, easily testable parts.*
 
-- `E2E testing`
+- E2E testing
 
-> *Unlike a unit test, you're testing the entire application.*
+*Unlike a unit test, you're testing the entire application.*
 
 **We're not going to talk about `E2E`. Sorry!**
 
@@ -37,11 +47,13 @@ Execute the following command - Sit and wait 'till everything is done, or just g
 vue add @vue/unit-jest
 ```
 
-It will create some files structuring the whole project to just start working with tests.
+It'll add some files so we'll be ready to start working with tests. :raised_hands:
 
-> "Hey buddy, I'm kinda lazy and I think my project doesn't have Vue CLI. Can I add it so I don't have to think too much?"
+> "Hey buddy, I don't think my project have Vue CLI installed. Can I add it so I won't have that much effort?"
 
-Hum.... yes? Execute the following command. It should work.
+*Hum.... yes?*
+
+Execute the following command... It should work. However I think it may cause an architecture issue, just saying...
 
 ```cmd
 yarn add @vue/cli-service --dev
@@ -49,21 +61,21 @@ yarn add @vue/cli-service --dev
 
 #### Installing manually :muscle:
 
-You'll need to install the `jest` package in your project:
+You'll need to install the `jest` in your project:
 
 ```cmd
 yarn add jest jest-transform-stub jest-vue-preprocessor babel-jest vue-jest @vue/test-utils --dev
 ```
 
-Are you facing `Unexpected token {`? *I faced...*
+Are you facing `Unexpected token {`? If so, it means your project has a lack of some libraries
 
 ```cmd
 yarn add babel-core babel-preset-env --dev
 ```
 
-Now begins the configuration...
+After that, we need to configure some files so we'll be good to go:
 
-- `.babelrc`:
+- .babelrc:
 
 ```javascript
 {
@@ -73,7 +85,7 @@ Now begins the configuration...
 }
 ```
 
-- `jest.config.js`:
+- jest.config.js:
 
 ```javascript
 module.exports = {
@@ -100,7 +112,7 @@ module.exports = {
 }
 ```
 
-- `package.json`:
+- package.json:
 
 ```json
 {
@@ -112,17 +124,22 @@ module.exports = {
 
 ### How to test it?
 
-Execute:
+The command below will call jest and test everything:
 
 ```cmd
 yarn test:unit
 ```
 
+If at some point you're using TDD. Maybe you'll want to add `--watch` and add a new script. Just do it!
+
 ### Brief explanation
 
-- `describe`: Responsible for grouping every test
-- `it` or `test`: Where test goes
-- `describe`: Where comparison is made
+If we still don't know how to work with it, let's clarify somethings:
+
+- *describe*: Responsible for grouping every test
+- *it*: Where test goes
+  - *test*: is an alias. it'll do the same thing
+- *describe*: Where comparison is made
 
 ### Testing
 
@@ -168,5 +185,12 @@ Just so you know, this is what an E2E test looks like:
 
 - [@vue/test-utils](https://vue-test-utils.vuejs.org)
 - [Jest cheat sheet](https://github.com/sapegin/jest-cheat-sheet)
+- [The What, Why and How of React testing](https://dev.to/mangel0111/the-what-why-and-how-of-react-testing-2702)
 - [Unit testing cheat sheet](https://github.com/dekadentno/vue-unit-testing-cheat-sheet)
 - [Unit vs E2E Testing for Vue.js](https://vuejsdevelopers.com/2019/04/01/vue-testing-unit-vs-e2e/)
+
+## The end
+
+If you're reading this, I'd like to thank you for the support.
+
+See ya!
