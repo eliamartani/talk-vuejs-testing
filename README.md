@@ -218,7 +218,7 @@ Just so you know, this is what an E2E test looks like:
 
 ## QA
 
-Ask me anything - I'm not that smart but Google is, let's ask him together.
+Ask me anything, Google will answear.
 
 ## Links
 
