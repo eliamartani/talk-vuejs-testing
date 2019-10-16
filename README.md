@@ -4,6 +4,10 @@
 
 In this talk we're going to learn how to setup testing tools at our projects, create tests and eventually realizing the importancy of testing our projects.
 
+## Why test?
+
+**********************************
+
 ## Resons for testing
 
 - Quality Code
@@ -26,17 +30,27 @@ In this talk we're going to learn how to setup testing tools at our projects, cr
 
 ## Types of Test
 
-- Unit testing
+- Unit
 
 *The idea of a "unit" in testing, is to break down the code into small, easily testable parts.*
 
-- E2E testing
+- E2E
 
 *Unlike a unit test, you're testing the entire application.*
 
-**We're not going to talk about `E2E`. Sorry!**
+- Snapshot
+
+**********************************
+
+**We're not going to talk about `E2E` and `Snapshot`. For now let's focus on `Unit` testing**
+
+### Comparison between them
+
+**********************************
 
 ## Unit Testing
+
+Quick notes on how to install the testing tool.
 
 ### Installing Jest
 
@@ -144,9 +158,15 @@ If at this point you still don't know some *keywords* for Javascript testing:
 
 ### Testing
 
+Live:
+
 > Creating our first test file
 
-### Testing asynchronous functions
+Online:
+
+> https://codesandbox.io/s/vue-component-testing-with-jest-ptxbj
+
+### Tips: Testing asynchronous functions
 
 For asynchronous functions we can use `flush-promises`. It flushes all pending resolved promise handlers
 
@@ -181,6 +201,8 @@ Just so you know, this is what an E2E test looks like:
 ![E2E Test](https://res.cloudinary.com/practicaldev/image/fetch/s--iwFe4sSa--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://thepracticaldev.s3.amazonaws.com/i/wt60c5tp9edask515t1x.png "E2E Test")
 
 *Image from [dev.to](https://dev.to/napoleon039/how-to-test-vue-apps-with-the-popular-cypress-framework-4jfg)*
+
+## Snapshot Testing
 
 ## QA
 
