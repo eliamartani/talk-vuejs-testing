@@ -34,24 +34,18 @@ In this talk we're going to learn how to setup testing tools at our projects, cr
 
 *Unlike a unit test, you're testing the entire application.*
 
-- Snapshot
-
-*Very useful whenever you want to make sure your UI does not change unexpectedly*
-
-**We're not going to talk about `E2E` and `Snapshot`. For now let's focus on `Unit` testing**
+**We're not going to talk about `E2E` neither `Snapshop`. For now let's focus on `Unit testing` only.**
 
 ### Comparison between `Unit` and `E2E`
 
 |              | Pros                                                                       | Cons                                                                                                                              |
 |--------------|----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
-| Unit testing | - Tests run fast<br>- Test can be precise and allow you to identify problems  | - Time-consuming to write tests for every aspect of your app<br>- Despite tests passing, it's not a guarantee that it will work 100% |
-| E2E testing  | - Can test many things at once<br>- Assure you that you have a working system | - Slow to run<br>- Tests can't pinpoint the cause of failure                                                                         |
+| Unit testing | - Tests run fast<br>- Test can be precise and allow you to identify problems  | - Time-consuming to write tests for every aspect of your app |
+| E2E testing  | - Can test many things at once<br>- Assure you that you have a working system | - Slow to run<br>- You may took a while to find the cause of failure |
 
 ## Unit Testing
 
 Quick notes on how to install the testing tool.
-
-### About
 
 ### Installing Jest
 
