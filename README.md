@@ -155,11 +155,11 @@ If at this point you still don't know some *keywords* for Javascript testing:
 
 Live:
 
-> Creating our first test file
+> Creating our first test in our meeting
 
-Online:
+Repository:
 
-> https://codesandbox.io/s/vue-component-testing-with-jest-ptxbj
+> https://github.com/eliamartani/vuejs-test-template
 
 ### Tips: Testing asynchronous functions
 
