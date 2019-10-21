@@ -34,7 +34,7 @@ In this talk we're going to learn how to setup testing tools at our projects, cr
 
 *Unlike a unit test, you're testing the entire application.*
 
-**We're not going to talk about `E2E` neither `Snapshop`. For now let's focus on `Unit testing` only.**
+**We're not going to talk about `E2E` neither `Snapshot`. For now let's focus on `Unit testing` only.**
 
 ### Comparison between `Unit` and `E2E`
 
@@ -201,7 +201,7 @@ Just so you know, this is what an E2E test looks like:
 
 :construction: Under construction
 
-Just so you know, this is what an Snapshop test looks like:
+Just so you know, this is what an Snapshot test looks like:
 
 ![Snapshot Test](https://d2mxuefqeaa7sj.cloudfront.net/s_58213BF018FD0961C4344D0DBA3156E5A68E45CE0A0DFB6C16D4061EC7E6C991_1521134013141_image.png "Snapshot Test")
 
